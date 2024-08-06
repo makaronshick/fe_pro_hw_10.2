@@ -5,12 +5,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-const array = [2, 55, 14, 33, 89, 11, 44, 7, 31, 22];
+const array = [2, 55, 14, 33, 89, 0, 11, 44, 7, 31, 22, 0];
 
-const newArray = array.filter(element => {
-  if (element % 2 === 0) {
-    return element;
-  }
-});
+const newArray = array.filter(element => element % 2 === 0);
 
 console.log(newArray);
